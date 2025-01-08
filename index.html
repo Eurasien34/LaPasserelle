@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="utf-8" />
+    <title>La Passerelle</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="overlay-menu-mobile"></div>
+    <header id="header">
+      <div class="header-logo">
+        <img src="./img/SVG/logo3.svg" alt="logo" />
+      </div>
+      <nav class="header-nav">
+        <div class="header-nav-close">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+        </div>
+        <ul class="header-nav-menu">
+          <li><a href="#restaurant">Notre restaurant</a></li>
+          <li><a href="#containeurCarte">Carte</a></li>
+          <li><a href="#traiteur">Coté traiteur</a></li>
+          <li><a href="#emporter">À emporter </a></li>
+        </ul>
+      </nav>
+      <div class="header-burger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>        
+      </div>
+        <a class="js-modal" href="#modal0" id="telephone"><img src="./img/tel.png" alt="tel" id="tel" /></a>
+         <!-- Modal -->
+        <div id="modal0" class="modal" aria-hidden="true" role="dialog" style="display: none">
+          <div class="modal-wrapper js-modal-stop">
+            <button class="js-modal-close button-close"><img src="./img/cross.png" alt="Fermer" id="cross"></button>
+            <h1 class="titlemodal">Téléphone</h1>
+            <p class="textmodal"><b>06 27 48 03 51</b></p>
+            <div id="containeurAppel">
+              <a href="tel:+33627480351" class="button">Appelez-nous</a>
+            </div>
+          </div>
+        </div>
+    <!-- Fin modal -->
+        <a href="#" id="back" class="show"><img src="./img/fleche.png" alt="tel" id="fleche" /></a>
+        
+    </header>
+
+   
+
+    <img src="./img/accueil/traits.png" alt="traits" id="traits" />
+    <div id="containeurAccueil">
+      <div id="Accueil">
+        <h1 class="titre accueil">La Passerelle</h1>
+        <div id="texteAccueil">
+          <p>
+            Un restaurant unique situé sur une passerelle au-dessus du canal de
+            Palavas-les-Flots depuis 1974.
+          </p>
+          <p>
+            Nous sommes fiers de proposer une cuisine diversifiée, allant des
+            moules frites aux seiches, en passant par les burgers et les
+            salades, préparés avec des ingrédients frais et locaux.
+          </p>
+          <p>
+            Nous vous accueillons sur notre belle terrasse mais aussi en
+            intérieur pour déguster nos plats ou pour une expérience culinaire à
+            emporter.
+          </p>
+          <p>Venez découvrir notre restaurant, pour un moment inoubliable.</p>
+        </div>
+        <a href="#carte" id="raccourciCarte">Voir nos plats</a>
+      </div>
+      <div id="imgAccueil">
+        <img class="gambasAccueil imgGambas" src="./img/accueil/gambas3.png" alt="accueil" />
+        <img class="seicheAccueil imgSeiche" src="./img/accueil/seiche5.png" alt="accueil" />
+      </div>
+    </div>
+
+    <div id="containeurRestaurant">
+      <div id="restaurant">
+        <h2 class="titre">Notre Restaurant</h2>
+        <div id="flexRestaurant">
+          <div id="centreCarrousel">
+            <div id="flechedirective">
+              <img
+                src="./img/SVG/fleche.svg"
+                alt="flechedroite"
+                class="bouton"
+                id="gauche"
+              />
+              <div id="carrousel">
+                <div id="containerCarrousel"></div>
+              </div>
+              <img
+                src="./img/SVG/fleche.svg"
+                alt="flechedroite"
+                class="bouton"
+                id="droite"
+              />
+            </div>
+          </div>
+          <div id="texteRestaurant">
+            <p>Nous sommes ravis de vous accueillir dans notre restaurant.</p>
+            <p>
+              N'hésitez pas à nous <a class="js-modal" href="#modal0"><u><b>contacter</b></u></a> pour toute réservation ou
+              pour commander des plats à emporter pendant nos heures
+              d'ouverture.
+            </p>
+            <p>Nous avons hâte de vous accueillir à La Passerelle !</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="containeurCarte">
+      <div class="bordureCarte">
+        <div class="titreCarte">
+          <h2>Notre Carte</h2>
+        </div>
+        <div id="carte">
+          <button class="section-btn" data-section="entrees">Entrées</button>
+          <button class="section-btn" data-section="plats">Plats</button>
+          <button class="section-btn" data-section="desserts">Desserts</button>
+          <button class="section-btn" data-section="formules">
+            Enfants
+          </button>
+          <button class="section-btn" data-section="boissons">Petit déjeuner</button>
+          <div id="sous-menu-plats" class="sous-menu"></div>
+        </div>
+      </div>
+
+      <div id="contenu-carte">
+        <!-- Le contenu de la carte sera affiché ici -->
+      </div>
+    </div>
+
+    <div id="carteTel">
+      <div class="bordureCarte">
+        <div class="titreCarte">
+          <h2>Notre Carte</h2>
+        </div>
+        <a href="entree.html" class="liensCarteTel">
+          <div id="entreeTel">
+            <h2 class="titreCarteTel">Les Entrées</h2>
+          </div>
+        </a>
+        <a href="plats.html" class="liensCarteTel">
+          <div id="platsTel">
+            <h2 class="titreCarteTel">Les Plats</h2>
+          </div>
+        </a>
+        <a href="desserts.html" class="liensCarteTel">
+        <div id="dessertsTel">
+          <h2 class="titreCarteTel">Les Desserts</h2>
+        </div>
+        </a>
+        <a href="enfants.html" class="liensCarteTel">
+        <div id="enfantsTel">
+          <h2 class="titreCarteTel">Menu Enfants</h2>
+        </div>
+        </a>
+        <a href="dejeuner.html" class="liensCarteTel">
+        <div id="dejeunerTel">
+          <h2 class="titreCarteTel">Petit déjeuner</h2>
+        </div>
+        </a>  
+      </div>
+    </div>
+
+    <div id="traiteur">
+      <h2 class="titre">Coté Traiteur</h2>
+      <div id="containeurTraiteur">
+        <div id="containeurTexteTraiteur">
+          <div id="texteTraiteur">
+            <p>
+              La Passerelle, plus qu'un simple restaurant, nous proposons
+              également un service traiteur pour vos événements spéciaux, que ce
+              soit chez vous, dans votre entreprise, sur place ou dans le lieu
+              de votre choix.
+            </p>
+            <p>
+              Nous sommes fiers de pouvoir vous proposer une cuisine savoureuse
+              et diversifiée, préparée avec des ingrédients frais et locaux.
+            </p>
+            <p>
+              Nous travaillerons avec vous pour créer un menu personnalisé
+              adapté à vos goûts et vos besoins.
+            </p>
+            <p>
+              Notre équipement portatif nous permettra de nous adapter à
+              n'importe quel environnement.
+            </p>
+            <p>
+              <a class="js-modal" href="#modal0"><b><u>Contactez-nous</u></b></a>
+              pour discuter de vos besoins, et laissez La Passerelle ajouter une
+              touche de saveur à votre événement.
+            </p>
+          </div>
+        </div>
+        <div id="containeurCarrouselTraiteur">
+          <div id="carrouselTraiteur">
+            <div class="card">
+              <img class="imgTraiteur" src="./img/traiteur/traiteur1.jpg" />
+            </div>
+            <div class="card">
+              <img class="imgTraiteur" src="./img/traiteur/traiteur2.jpg" />
+            </div>
+            <div class="card">
+              <img class="imgTraiteur" src="./img/traiteur/traiteur3.jpg" />
+            </div>
+            <div class="card">
+              <img class="imgTraiteur" src="./img/traiteur/traiteur4.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="emporter">
+      <h2 class="titre">À Emporter</h2>
+      <div id="containeurEmporter">
+        <div id="imgEmporter">
+          <img
+            src="./img/Carte/CarteV2/burger.png"
+            alt="burger"
+            id="burgeremporter"
+          />
+          <img
+            src="./img/Carte/CarteV2/moules.png"
+            alt="moules"
+            id="moulesemporter"
+          />
+        </div>
+        <div id="texteEmporter">
+          <p>
+            À La Passerelle, nous comprenons que vous ne pouvez pas toujours
+            vous installer confortablement dans notre restaurant au-dessus du
+            canal de Palavas-les-Flots.
+          </p>
+          <br />
+          <p>
+            C'est pourquoi nous proposons un service à emporter pour que vous
+            puissiez déguster nos délicieux plats où que vous soyez. Que vous
+            prévoyiez une journée à la plage ou que vous souhaitiez dîner
+            confortablement chez vous, notre service à emporter est la solution
+            parfaite.
+          </p>
+          <br />
+          <p>
+            Choisissez parmi notre menu diversifié et
+            <a class="js-modal" href="#modal0"><b><u>appelez-nous</u></b></a>
+            ou venez directements sur place pour commander et nous préparerons
+            votre repas à emporter pour une expérience culinaire à savourer où
+            que vous soyez.
+          </p>
+        </div>
+      </div>
+      <div id="marin">
+        <h2 id="titremarin">Avis aux marins !</h2>
+        <div id="textemarin">
+          <p>
+            La Passerelle a égalements pensé à vous. Si vous êtes
+            en mer et que vous possédez un bateau, vous pouvez tout à fait
+            commander nos délicieux plats à emporter depuis votre embarcation.
+          </p>
+          <br />
+          <p>
+            Imaginez-vous en train de profiter de la beauté de la mer tout en
+            dégustant nos moules frites fraîchement préparées, nos seiches
+            savoureuses ou nos burgers succulents.
+          </p>
+          <br />
+          <p>
+            Il vous suffit de nous contacter par téléphone pour passer votre
+            commande, et nous la préparerons avec soin. Rendez votre journée en
+            mer encore plus mémorable en savourant les saveurs de La Passerelle,
+            directement depuis votre bateau.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="localisation">
+      <h2 class="titre">Localisation</h2>
+      <div id="containeurLocalisation">
+        <div id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11571.095661664329!2d3.9305662!3d43.5279071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6ba5e9552d2d5%3A0x429363bb6ac2c62e!2sLa%20Passerelle!5e0!3m2!1sfr!2sfr!4v1686754315210!5m2!1sfr!2sfr"
+            width="600"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div id="ggmapinf">
+          <p>Quai Paul Cunq, 34250 Palavas-les-Flots</p>
+          <img src="./img/ggmap.png" alt="google map" id="ggmap" />
+          </div>
+        </div>
+        <div id="texteLocalisation">
+          <p id="red">A propos</p>
+          <br />
+          <p>
+            Notre restaurant est idéalement situé sur la rive gauche du canal de
+            Palavas-les-Flots, unique en son genre, depuis une plateforme
+            au-dessus du canal, nous vous offrons une vue imprenable sur l'eau
+            et une atmosphère unique pour votre repas.
+          </p>
+        </div>
+    </div>
+    
+    <footer>
+      <div class="LogosContainer">
+        <a href="https://www.instagram.com/lapasserellepalavas/"><img src="./img/footer/instagram.svg" alt="Instagram" /></a>
+        <a href="https://fr-fr.facebook.com/people/Restaurant-la-passerelle-palavas-les-flots/100063941596852/"><img src="./img/footer/facebook.svg" alt="Facebook" /></a>
+      </div>
+      <div class="LinksContainer">
+        <div>
+          <a href="#localisation">Quai Paul Cunq, 34250 Palavas-les-Flots</a>
+          <a href="tel:+33627480351">Contact : 06 27 48 03 51"</a>
+        </div>
+      
+        <div>
+          <a href="#restaurant">Notre restaurant</a>
+          <a href="#containeurCarte">Carte</a>
+          <a href="#traiteur">Coté traiteur</a>
+          <a href="#emporter">À emporter </a>
+        </div>
+      </div>
+      
+      <div class="FooterInfos">
+        <p>© 2023 La Passerelle. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+
+    <script src="./js/ecouteur.js"></script>
+    <script src="./js/burgermenu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/backbutton.js"></script>
+    <script src="./js/carrouselTraiteur.js"></script>
+    <script src="./js/load.js"></script>
+    <script src="./js/accueil.js"></script>
+    <script src="./js/carte.js" defer></script>
+    <script src="./js/carrouselA.js"></script>
+  </body>
+</html>

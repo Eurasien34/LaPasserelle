@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="utf-8" />
+    <title>La Passerelle</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+  <div class="overlay-menu-mobile"></div>
+    <header id="header">
+      <div class="header-logo">
+        <img src="./img/SVG/logo3.svg" alt="logo" />
+      </div>
+      <nav class="header-nav">
+        <div class="header-nav-close">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+        </div>
+        <ul class="header-nav-menu">
+          <li><a href="./index.html" class="back">Accueil</a></li>
+          <li><a href="#moules">Les Moules Frites</a></li>
+          <li><a href="#burgers">Les Burgers</a></li>
+          <li><a href="#salades">Les Salades</a></li>
+          <li><a href="#coquillages">Coquillages & Crustacés </a></li>
+          <li><a href="#mers">Côté Mer</a></li>
+          <li><a href="#terres">Côté Terre</a></li>
+        </ul>
+      </nav>
+      <div class="header-burger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>        
+      </div>
+        <a class="js-modal" href="#modal0" id="telephone"><img src="./img/tel.png" alt="tel" id="tel" /></a>
+         <!-- Modal -->
+        <div id="modal0" class="modal" aria-hidden="true" role="dialog" style="display: none">
+          <div class="modal-wrapper js-modal-stop">
+            <button class="js-modal-close button-close"><img src="./img/cross.png" alt="Fermer" id="cross"></button>
+            <h1 class="titlemodal">Téléphone</h1>
+            <p class="textmodal"><b>04 67 68 07 64</b></p>
+            <div id="containeurAppel">
+              <a href="tel:+33123456789" class="button">Appelez-nous</a>
+            </div>
+          </div>
+        </div>
+    <!-- Fin modal -->
+    </header>
+
+    <div class="containeurCarteTel" id="moules">
+    <div id="prixMoules"><p><b>Formule<br>moules frites<br>à volonté<br>+ 1 bière</b> <em>(25cl)</em><br><b>21€ <em>*</em> / personne</b></p></div>
+    <img src="./img/Carte/CarteV2/moules.png" alt="moules" class="imgCarte"/>
+      <div class="bordureCarteMer">
+        <div class="titreCarteMer">
+          <h2>Les Moules Frites 15,00€</h2>
+        </div>
+        <div class="carteMer">
+          <p><b>Marinière</b> <em>(beurre, oignons, ail, persil, vin blanc)</em></p>
+          <p><b>Roquefort</b> <em>(oignons, roquefort, crème)</em></p>
+          <p><b>Grand-mère</b> <em>(oignons, ail, persil, crème)</em></p>
+          <p><b>Crème d'ail</b> <em>(oignons, ail, persil, crème)</em></p>
+          <p><em>Toutes nos sauces sont faites maison</em></p>
+          <p><em>Supplément sauce : 1€ *</em></p>
+        </div>
+        <p class="infoCarte"><em>* Nos prix peuvent variés en fonction de l'arrivage</em></p>
+    </div>
+    </div>
+
+  <div class="containeurCarteTel" id="burgers">
+    <img src="./img/Carte/CarteV2/burger.png" alt="burger" class="imgCarte"/>
+    <div class="bordureCarteMer">
+        <div class="titreCarteMer">
+          <h2>Les Burgers 19,00€</h2>
+        </div>
+        <div class="carteMer">
+          <p><b>Le Classique :</b><br><em>(Pain toasté, steak haché façon bouchère 180gr, sauce poivre, cheddar fondu, salade, tomates rôties)</em></p>
+          <p><b>Fish and chips façon burger :</b><br> <em>(Pain toasté, cotin pané façon fish & chips, sauce tartare, cheddar fondu, salade, tomates rôties)</em></p>
+          <p><b>L'Indien :</b><br> <em>(Pain toasté, poulet pané corn flakes, mayonnaise au curry, cheddar foncu, salade, tomates rôties)</em></p>
+          <p><b>Le Savoyard :</b><br> <em>(Pain toasté steak haché façon bouchère 180gr sauce poivre, fromage à raclette fondu, salade, tomates rôties)</em></p>
+          <p><b>Le Veggie :</b><br> <em>(Pain toasté, steak d'avocat pané, sauce blanche, cheddar fondu, salade, tomates rôties)</em></p>
+        </div>
+        <p class="infoCarte"><em>* Nos prix peuvent variés en fonction de l'arrivage</em></p>
+      </div>
+  </div>
+
+  <div class="containeurCarteTel" id="salades">
+  <img src="./img/Carte/CarteV2/salade.png" alt="salade" class="imgCarte" />
+      <div class="bordureCarteMer">
+        <div class="titreCarteMer">
+          <h2>Les Salades 17,00€</h2>
+        </div>
+        <div class="carteMer">
+          <p><b>César poulet :</b><br><em>(Salade, tomates, oignons rouges, poulet pané façon corn flakes, camemberts panés, parmesan, croûtons, sauce césar)</em></p>
+          <p><b>César crevettes :</b><br> <em>(Salade, tomates, oignons rouges, crevettes panées, ail et persil, camemberts panés, parmesan, croûtons, sauce césar)</em></p>
+          <p><b>Fromagère :</b><br> <em>(Salade, tomates, oignons rouges, dés d'emmental, camemberts panés, toasts de chèvre chauds, parmesan, vinaigrette maison)</em></p>
+        </div>
+        <p class="infoCarte"><em>* Nos prix peuvent variés en fonction de l'arrivage</em></p>
+      </div>
+    </div>
+
+    <div class="containeurCarteTel" id="coquillages">
+    <img src="./img/Carte/CarteV2/coquillages.png" alt="coquillages" class="imgCarte" />
+      <div class="bordureCarteMer">
+        <div class="titreCarteMer">
+          <h2>Coquillages & Crustacés</h2>
+        </div>
+        <div class="carteMer">
+          <div class="prix"><p><b>Dégustation</b></p><p class="prixdroite">14,50€</p></div>
+          <div class="prix"><p><b>Solo</b></p><p class="prixdroite">32,00€</p></div>
+          <div class="prix"><p><b>Duo</b></p><p class="prixdroite">65,00€</p></div>
+          <div class="prix"><p><b>6 huîtres de Bouzigues n°3</b></p><p class="prixdroite">11,50€</p></div>
+          <div class="prix"><p><b>12 huîtres de Bouzigues n°3</b></p><p class="prixdroite">23,00€</p></div>
+          <div class="prix"><p><b>Crevettes fraîches mayonnaise</b></p><p class="prixdroite">14,50€</p></div>
+          <div class="prix"><p><b>Gambas froides mayonnaise</b></p><p class="prixdroite">15,00€</p></div>
+          <div class="prix"><p><b>Bulots aïoli</b></p><p class="prixdroite">11,50€</p></div>
+        </div>
+        <p class="infoCarte"><em>* Nos prix peuvent variés en fonction de l'arrivage</em></p>
+      </div>
+    </div>
+
+    <div class="containeurCarteTel" id="mers">
+        <img src="./img/Carte/CarteV2/mer.png" alt="seiche" class="imgCarte" />
+      <div class="bordureCarteMer">
+        <div class="titreCarteMer">
+          <h2>Côté Mer</h2>
+        </div>
+        <div class="carteMer">
+          <div class="prix"><p><b>Seiche à la plancha en persillade</b></p><p class="prixdroite">21,00€</p></div>
+          <div class="prix"><p><b>Gambas grillées en persillade</b></p><p class="prixdroite">21,00€</p></div>
+          <div class="prix"><p><b>Dorade entière au four</b> <em>environ 300/400gr</em></p><p class="prixdroite">23,00€</p></div>
+          <div class="prix"><p><b>Parillada pour 2 personnes :</b><br> <em>(Dorade, couteaux, moules, gambas, crevettes, seiche, aioli et mayonnaise, salade composée et frites)</em></p><p class="prixdroite">65,00€</p></div>
+        </div>
+        <p class="infoCarte"><em>* Nos prix peuvent variés en fonction de l'arrivage</em></p>
+      </div>
+    </div>
+
+    
+    <div class="containeurCarteTel" id="terres">
+        <img src="./img/Carte/CarteV2/terre.png" alt="carpaccio" class="imgCarte" />
+      <div class="bordureCarteMer">
+        <div class="titreCarteMer">
+          <h2>Côté Terre</h2>
+        </div>
+        <div class="carteMer">
+          <div class="prix"><p><b>Steak à cheval</b> <em>(180gr façon bouchère)</em></p><p class="prixdroite">14,00€</p></div>
+          <div class="prix"><p><b>Double carpaccio de boeuf charolais</b> pesto et parmesan</p><p class="prixdroite">16,00€</p></div>
+        </div>
+        <p class="infoCarte"><em>* Nos prix peuvent variés en fonction de l'arrivage</em></p>
+      </div>
+    </div>
+
+    <div class="navigationTel">
+      <a href="entree.html" class="back">Les entrées</a>
+      <a href="index.html" class="back">Retour à l'accueil</a>
+      <a href="desserts.html" class="back">Les desserts</a>
+    </div>
+  
+
+  <footer>
+    <div class="LogosContainer">
+      <a href="https://www.instagram.com/lapasserellepalavas/"><img src="./img/footer/instagram.svg" alt="Instagram" /></a>
+      <a href="https://fr-fr.facebook.com/people/Restaurant-la-passerelle-palavas-les-flots/100063941596852/"><img src="./img/footer/facebook.svg" alt="Facebook" /></a>
+    </div>
+    <div class="LinksContainer">
+      <div>
+        <a href="#localisation">Quai Paul Cunq, 34250 Palavas-les-Flots</a>
+        <a href="tel:+33627480351">Contact : 06 27 48 03 51"</a>
+      </div>
+    </div>
+    <div class="FooterInfos">
+      <p>© 2023 La Passerelle. Tous droits réservés.</p>
+    </div>
+  </footer>
+    <script src="./js/burgermenu.js"></script>
+    <script src="./js/redirection.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
